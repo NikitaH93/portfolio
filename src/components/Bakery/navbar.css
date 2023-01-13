@@ -1,0 +1,283 @@
+.n {
+    display: flex;
+    justify-content: center; /* align items horizontally */
+    width: 100%;
+  }
+  
+  .n-items {
+    list-style: none; /* remove bullet points */
+    display: flex; /* make the items go across the screen */
+    justify-content: space-between; /* distribute the items with equal space around them */
+  }
+  
+  .n-items > li {
+    padding:  50px 20px 10px 20px;  /* add some space between items */
+    font-size: 40px;
+  }
+  .bakery-font {
+    font-family: 'Dancing Script'
+}
+
+.bakery{
+    background-color: #f8f6f5;
+    height: 100vh;
+}
+
+.nav-link {
+    /* default styles */
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    transform: scale(1.1); /* scale up the button on hover */
+  }
+
+  .hero {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 0.7;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #aed5d4; /* set the desired color */
+    opacity: 0.8; /* set the desired opacity */
+  }
+  
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+  .hero-image {
+    width: 300px;
+    margin-right: 50px;
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5d291c;
+  }
+  
+  .hero-subheading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5d291c;
+  }
+  
+  .hero-button {
+    background-color: #5d291c;
+    color: white;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 800;
+    cursor: pointer;
+
+    /* border: 2px solid #007bff; */
+  }
+  
+  .hero-button:hover {
+    background-color: white;
+    color: #5d291c;
+  }
+  
+
+  .sectionItem-bg {
+    width: 100%;
+    height: 1800px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 1;
+  }
+
+
+
+  .cake-grid {
+    text-align: center;
+    width: 100%;
+    height: 1500px;
+  }
+  
+  .cake-heading {
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+  
+  .cake-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center; /* centers items horizontally */
+    align-items: center; /* centers items vertically */
+    
+  }
+  
+  .cake-item {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* set the desired shadow */
+
+  }
+  
+  .item-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .item-bg:hover {
+    transform: scale(1.1);
+    filter: brightness(80%);
+  }
+  
+  .item-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #5d291c;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .item-bg:hover .item-info {
+    opacity: 1;
+  }
+  
+  .item-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .item-price {
+    font-size: 18px;
+  }
+  
+
+
+
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    height: 500px;
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .card-img{
+    max-width: 300px;
+    max-height: 200px;
+  }
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #5d291c;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    align-self: flex-end;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+
+
+
+
+
+
+  .order-form {
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+form button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #555;
+}

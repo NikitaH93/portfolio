@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
@@ -20,6 +20,7 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
+  const location = useLocation();
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -30,7 +31,11 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  if(location.pathname === '/bakery'){
+    return(<></>)
+  }
   return (
+    
     <Navbar
       expanded={expand}
       fixed="top"
