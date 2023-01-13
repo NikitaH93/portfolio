@@ -18,7 +18,7 @@ const BakeryItems = ({ cakes }) => {
                         //         </div>
                         //     </div>
                         // </div>
-                        <div className="card bakery-font">
+                        <div className="card product bakery-font">
                             <img className = 'card-img' src={cake.img}/>
                             <h1 className='bakery-font'>{cake.name}</h1>
                             <p className="price bakery-font">{cake.price}</p>
