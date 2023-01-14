@@ -16,6 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import GameHome from "./components/game/homepage";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -38,6 +39,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/bakery" element={<Bakery />} />
+          <Route path="/game" element={<GameHome />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </div>

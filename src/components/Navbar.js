@@ -30,7 +30,7 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
-  if(location.pathname === '/bakery'){
+  if(location.pathname === '/bakery' || location.pathname === '/game'){
     return(<></>)
   }
   return (
