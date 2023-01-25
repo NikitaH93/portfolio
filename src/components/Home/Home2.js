@@ -16,16 +16,16 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              SOME STUFF<span className="purple"> ABOUT </span> ME 
+              <span className="purple"> ABOUT </span> ME 
             </h1>
             <p className="home-about-body">
 	  I am a
                 <b className="purple"> Software Engineer </b>
-with 5 years of experience in the industry. Throughout my career, I have had the opportunity to work in the retail industry, where I was responsible for developing and maintaining client-facing websites.
+with 5 years of experience in the industry. Throughout my career, I've have been working in the retail industry, where I have been responsible for developing and maintaining client-facing websites.
               <br />
               <br />
               <br />
-In the past 2 years, I have made the transition to working as a freelancer, allowing me to take on a diverse range of projects and clients. I am excited to continue to grow my skills and experience in the field of software engineering and am eager to take on new challenges.
+In the past 2 years, I've made the transition to work as a freelancer, allowing myself to take on a diverse range of projects and clients. I am eager to take on new challenges whilst continuing to grow my skills and experience .
               <br />
               <br />
              In my spare time i like creating different full stack applications i am currently using  
